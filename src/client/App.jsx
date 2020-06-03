@@ -33,15 +33,11 @@ class App extends React.Component {
 
     if (this.state.chore.length > 1 && this.state.chore.length < 200) {
 
-      console.log(this.state.chore);
-
       let listOfChores = this.state.chores;
       
       listOfChores.push(this.state.chore);
 
       this.setState({chores: listOfChores})
-
-      console.log(listOfChores);
 
       this.refs.input.value = "";
 
@@ -53,7 +49,7 @@ class App extends React.Component {
 
       console.log(this.state.chore);
 
-      this.setState({errorMessage: "More than 1 character"})
+      this.setState({errorMessage: "Cant empty la"})
 
     }
     
